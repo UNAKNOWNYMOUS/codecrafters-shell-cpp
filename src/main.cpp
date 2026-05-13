@@ -18,8 +18,8 @@ int main() {
       break;
     } else if (command == "echo") {
       std::cout << command;
+    } else {
+      std::cout << command << ": command not found\n";
     }
-
-    std::cout << command << ": command not found\n";
   }
 }
