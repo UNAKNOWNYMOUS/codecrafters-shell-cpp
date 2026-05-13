@@ -23,7 +23,7 @@ int main() {
       std::cout << command.substr(5) << '\n';
     } else if (command.substr(0, 5) == "type ") {
       if (valid_commands.contains(command.substr(5))) {
-        std::cout << command.substr(5) << "is a shell builtin\n";
+        std::cout << command.substr(5) << " is a shell builtin\n";
       } else {
         std::cout << command << ": command not found\n";
       }
