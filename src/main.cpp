@@ -9,7 +9,7 @@ int main() {
   std::cout << "$ ";
 
   std::string user_command{};
-  std::cin >> user_command;
+  std::getline(std::cin, user_command);
 
-  std::cout << user_command << ": command not found";
+  std::cout << user_command << ": command not found\n";
 }
