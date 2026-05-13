@@ -25,7 +25,7 @@ int main() {
       if (valid_commands.contains(command.substr(5))) {
         std::cout << command.substr(5) << " is a shell builtin\n";
       } else {
-        std::cout << command << ": command not found\n";
+        std::cout << command.substr(5) << ": not found\n";
       }
     } else {
       std::cout << command << ": command not found\n";
