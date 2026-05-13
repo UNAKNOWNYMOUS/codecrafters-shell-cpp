@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <iostream>
 #include <string>
 
@@ -16,7 +15,7 @@ int main() {
     std::getline(std::cin, command);
 
     if (command == "exit") {
-      std::exit(EXIT_SUCCESS);
+      break;
     }
 
     std::cout << command << ": command not found\n";
