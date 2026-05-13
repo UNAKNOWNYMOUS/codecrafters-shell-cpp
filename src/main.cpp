@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
@@ -13,6 +14,10 @@ int main() {
     // Read user's command
     std::string command{};
     std::getline(std::cin, command);
+
+    if (command == "exit") {
+      std::exit(EXIT_SUCCESS);
+    }
 
     std::cout << command << ": command not found\n";
   }
