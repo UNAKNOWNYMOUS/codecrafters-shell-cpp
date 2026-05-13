@@ -6,10 +6,14 @@ int main() {
   std::cout << std::unitbuf;
   std::cerr << std::unitbuf;
 
-  std::cout << "$ ";
+  while (true) {
+    // Print shell prompt
+    std::cout << "$ ";
 
-  std::string user_command{};
-  std::getline(std::cin, user_command);
+    // Read user's command
+    std::string command{};
+    std::getline(std::cin, command);
 
-  std::cout << user_command << ": command not found\n";
+    std::cout << command << ": command not found\n";
+  }
 }
